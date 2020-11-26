@@ -15,6 +15,13 @@
     <version>1.0.0</version>
     <name>Alibaba Nacos :: Spring :: Context</name>
     <packaging>jar</packaging>
+    <distributionManagement>
+        <repository>
+            <id>maven-releases</id>
+            <name>release</name>
+            <url>http://nexus.oristarcloud.com/repository/maven-releases/</url>
+        </repository>
+    </distributionManagement>
 
     <dependencies>
 
@@ -57,12 +64,12 @@
         </dependency>
 
         <!-- Testing -->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>nacos-embedded-webserver</artifactId>
-            <version>${project.version}</version>
-            <scope>test</scope>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>${project.groupId}</groupId>-->
+<!--            <artifactId>nacos-embedded-webserver</artifactId>-->
+<!--            <version>${project.version}</version>-->
+<!--            <scope>test</scope>-->
+<!--        </dependency>-->
 
         <dependency>
             <groupId>junit</groupId>
